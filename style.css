@@ -339,7 +339,7 @@ main > section {
     padding: 15px; /* Some padding */
     border-radius: 9999px; /* Rounded corners */
     border: 1px solid var(--GREEN);
-    font-size: 18px; /* Increase font size */
+   font-size:0px;
     animation: scrollButton 3s ease-in-out infinite;
 }
 
@@ -386,5 +386,9 @@ main > section {
 
     header{
         height: 58px;
+    }
+
+    #myBtn > img{
+        height: 16px;
     }
 }
