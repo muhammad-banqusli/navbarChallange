@@ -44,7 +44,8 @@ const initApp = () => {
             !event.target.matches("#menu-icon") &&
             !event.target.matches("button") && 
             !event.target.matches('input') &&
-            !event.target.matches('#side-navbar')
+            !event.target.matches('#side-navbar')&&
+            !event.target.matches('nav')
         ) {
             if (sideNav.classList.contains("active")) {
                 sideNav.classList.remove("active");
