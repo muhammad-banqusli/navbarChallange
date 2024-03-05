@@ -256,6 +256,8 @@ input:focus {
     transform: translate(45px) rotate(-45deg);
 }
 
+
+
 main {
     max-width: 1280px;
     width: 100%;
@@ -326,7 +328,7 @@ main > section {
 }
 
 #myBtn {
-    display: block; /* Hidden by default */
+    display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 30px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
