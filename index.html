@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            href="https://blulogix.com/wp-content/uploads/ico-file.png"
+            sizes="192x192"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./js/main.js" defer></script>
+        <title>Navbar Challenge</title>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <section class="header__section-nav">
+                    <h3>Navbar</h3>
+                    <nav class="topbar-nav">
+                        <a href="#hero">Home</a>
+                        <a href="#hero">Link</a>
+                        <div class="dropdown-container">
+                            <button
+                                id="dropdownBtn"
+                                class="nav__btn dropdown__btn"
+                                type="button"
+                            >
+                                Dropdown
+                                <img
+                                    id="drop-icon"
+                                    class="dropdown--icon"
+                                    title="Dropdown Control"
+                                    src="./assets/icons/triangle-down-filled-svgrepo-com.svg"
+                                />
+                            </button>
+                            <ul id="dropdown" class="dropdown-content">
+                                <li><a href="#section1">Section 1</a></li>
+                                <hr />
+                                <li><a href="#section2">Section 2</a></li>
+                                <hr />
+                                <li><a href="#section3">Section 3</a></li>
+                            </ul>
+                        </div>
+                        <button
+                            disabled
+                            title="This is button is not active"
+                            class="nav__btn"
+                            type="button"
+                        >
+                            Disabled
+                        </button>
+                    </nav>
+                </section>
+                <section class="search-section">
+                    <input type="text" placeholder="Search" />
+                    <button class="search--btn" type="button">Search</button>
+                </section>
+            </div>
+            <button id="menu-button" class="menu-button" onclick="toggleNav()">
+                <div class="menu-icon" id="menu-icon"></div>
+            </button>
+        </header>
+        <div class="side-navbar" id="side-navbar">
+            <nav>
+                <a href="#hero">Home</a>
+                <a href="#hero">Link</a>
+                <div class="dropdown-container">
+                    <button
+                        id="dropdownBtn-sidebar"
+                        class="nav__btn dropdown__btn"
+                        type="button"
+                    >
+                        Dropdown
+                        <img
+                            id="drop-icon-sidebar"
+                            class="dropdown--icon"
+                            title="Dropdown Control"
+                            src="./assets/icons/triangle-down-filled-svgrepo-com.svg"
+                        />
+                    </button>
+                    <ul id="dropdown-sidebar" class="dropdown-content">
+                        <li><a href="#section1">Section 1</a></li>
+                        <hr />
+                        <li><a href="#section2">Section 2</a></li>
+                        <hr />
+                        <li><a href="#section3">Section 3</a></li>
+                    </ul>
+                </div>
+                <button
+                    disabled
+                    title="This is button is not active"
+                    class="nav__btn"
+                    type="button"
+                >
+                    Disabled
+                </button>
+            </nav>
+
+            <input type="text" placeholder="Search" />
+            <button class="search--btn" type="button">Search</button>
+        </div>
+        <main>
+            <section class="hero" id="hero">
+                <h2>Hello World!</h2>
+            </section>
+            <section class="hero" id="section1">
+                <h2>Section 1</h2>
+            </section>
+            <section class="hero" id="section2">
+                <h2>Section 2</h2>
+            </section>
+            <section class="hero" id="section3">
+                <h2>Section 3</h2>
+            </section>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">
+                <img src="/assets/icons/up-arrow-svgrepo-com.svg" alt="Got to top">
+            </button>
+        </main>
+    </body>
+</html>
