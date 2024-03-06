@@ -50,6 +50,9 @@ const initApp = () => {
             if (sideNav.classList.contains("active")) {
                 sideNav.classList.remove("active");
             }
+            if (!sideNav.classList.contains("unactive")) {
+                sideNav.classList.add("unactive");
+            }
 
             if (menuButton.classList.contains("menu-icon-active")) {
                 menuButton.classList.remove("menu-icon-active");
@@ -69,6 +72,7 @@ const toggleNav = () => {
     const sideNav = document.getElementById("side-navbar");
     menuButton.classList.toggle("menu-icon-active");
     sideNav.classList.toggle("active");
+    sideNav.classList.toggle("unactive");
 };
 
 
