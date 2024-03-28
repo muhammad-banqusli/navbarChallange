@@ -95,3 +95,11 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+const toggleSidebar = () => {
+    console.log("hello")
+    const sidebar = document.querySelector(".left-sidebar")
+    console.log(sidebar)
+    sidebar.classList.toggle("open")
+    sidebar.classList.toggle("close")
+}
